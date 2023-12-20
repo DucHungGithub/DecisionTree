@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Flavanoids <= 1.29\nentropy = 1.569\nsamples = 106\nvalue = [35, 42, 29]\nclass = 2", fillcolor="#ebfcf3"] ;
+1 [label="Color_intensity <= 3.725\nentropy = 0.602\nsamples = 34\nvalue = [0, 5, 29]\nclass = 3", fillcolor="#975be9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.0\nsamples = 5\nvalue = [0, 5, 0]\nclass = 2", fillcolor="#39e581"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 29\nvalue = [0, 0, 29]\nclass = 3", fillcolor="#8139e5"] ;
+1 -> 3 ;
+4 [label="Proline <= 724.5\nentropy = 0.999\nsamples = 72\nvalue = [35, 37, 0]\nclass = 2", fillcolor="#f4fef8"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="entropy = 0.0\nsamples = 33\nvalue = [0, 33, 0]\nclass = 2", fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label="Color_intensity <= 3.465\nentropy = 0.477\nsamples = 39\nvalue = [35, 4, 0]\nclass = 1", fillcolor="#e88f50"] ;
+4 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 4\nvalue = [0, 4, 0]\nclass = 2", fillcolor="#39e581"] ;
+6 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 35\nvalue = [35, 0, 0]\nclass = 1", fillcolor="#e58139"] ;
+6 -> 8 ;
+}
